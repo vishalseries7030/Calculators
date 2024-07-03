@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+  }
+  
+  .calculator {
+    width: 320px; /* Adjusted width for layout */
+    padding: 20px;
+    background-color: #3498db; /* Blue background color */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+  
+  .display {
+    grid-column: span 4;
+    height: 100px; /* Increased height for display */
+    font-size: 48px; /* Larger font size for display */
+    background-color: #2980b9; /* Darker blue for display */
+    color: #fff;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .btn {
+    background-color: #1abc9c; /* Turquoise color for buttons */
+    color: #fff;
+    font-size: 32px; /* Larger font size for buttons */
+    padding: 30px 10px; /* Increased vertical padding */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+  }
+  
+  .btn:hover {
+    background-color: #16a085; /* Darker turquoise on hover */
+    transform: scale(1.1); /* Scale button on hover */
+  }
+  
+  .orange {
+    background-color: #e67e22; /* Orange color for operator buttons */
+  }
+  
+  .orange:hover {
+    background-color: #d35400; /* Darker orange on hover */
+  }
+  
+  .equal {
+    grid-column: span 2;
+    background-color: #f39c12; /* Yellow color for equals button */
+  }
+  
+  .equal:hover {
+    background-color: #e67e22; /* Darker yellow on hover */
+  }
+  
+  .clear {
+    background-color: #e74c3c; /* Red color for clear button */
+  }
+  
+  .clear:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Crazy styles */
+  .calculator {
+    transform: rotate(2deg); /* Rotate calculator slightly */
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.1); /* Add shadow below calculator */
+  }
+  
+  .btn {
+    font-weight: bold; /* Bold font for buttons */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .equal {
+    font-size: 36px; /* Larger font size for equals button */
+  }
+  
+  .clear {
+    font-size: 24px; /* Smaller font size for clear button */
+  }
+  
